@@ -8,6 +8,7 @@ import 'package:dio/dio.dart';
 import 'package:dio_cookie_manager/dio_cookie_manager.dart';
 
 import 'auth.dart';
+import 'notification.dart';
 import 'user.dart';
 import 'world.dart';
 
@@ -51,7 +52,7 @@ class ModelBase {
   }
 }
 
-class VRCModel extends ModelBase with Auth, User, World {
+class VRCModel extends ModelBase with Auth, User, World, Notification {
   VRCModel({this.appDocPath, this.httpProxy})
       : super(appDocPath: appDocPath, httpProxy: httpProxy);
 

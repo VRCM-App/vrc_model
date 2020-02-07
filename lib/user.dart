@@ -56,21 +56,15 @@ mixin User on ModelBase {
     return resp?.statusCode == 200;
   }
 
-  // 发送好友请求
-  Future<bool> sendFriendRequest(String id) async {
-    Response resp = await dio.post("user/$id/friendRequest");
-    return resp?.statusCode == 200;
-  }
-
   // 删除好友
   Future<bool> unFriend(String id) async {
     Response resp = await dio.delete("auth/user/friends/$id");
     return resp?.statusCode == 200;
   }
 
-  // 处理好友请求
-  Future<bool> acceptFriendRequest(String id) async {
-    Response resp = await dio.put("auth/user/notifications/$id/accept");
+  // 发送好友请求
+  Future<bool> sendFriendRequest(String id) async {
+    Response resp = await dio.post("user/$id/friendRequest");
     return resp?.statusCode == 200;
   }
 }
