@@ -1,5 +1,5 @@
 # vrc_model
-![test package](https://github.com/NectarFish/vrc_model/workflows/test%20package/badge.svg?branch=master)
+![test package](https://github.com/VRCM-App/vrc_model/workflows/test%20package/badge.svg?branch=master)
 
 A Dart package to use the VRChat API.
 
