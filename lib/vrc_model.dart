@@ -7,7 +7,6 @@ import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_cookie_manager/dio_cookie_manager.dart';
 
-import 'models/apiConfig.dart';
 import 'auth.dart';
 import 'user.dart';
 import 'world.dart';
@@ -59,8 +58,8 @@ class VRCModel extends ModelBase with Auth, User, World {
   String appDocPath;
   String httpProxy;
 
-  Future<ApiConfig> config() async {
+  Future<String> config() async {
     Response resp = await dio.get("config");
-    return ApiConfig.fromJson(resp?.data);
+    return resp?.data["apiKey"];
   }
 }

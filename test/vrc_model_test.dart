@@ -9,8 +9,7 @@ void main() {
     String vrcPwd = Platform.environment["VRCPwd"];
     VRCModel vrc = VRCModel(appDocPath: "./");
     test('Init', () async {
-      var apiConfig = await vrc.config();
-      vrc.apiKey = apiConfig.apiKey;
+      vrc.apiKey = await vrc.config();
     });
     test('Auth', () async {
       var authInfo = await vrc.login(vrcUser, vrcPwd);
