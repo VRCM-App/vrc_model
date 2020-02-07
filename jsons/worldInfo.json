@@ -1,0 +1,32 @@
+{
+  "id": "wrld_c6fa89bc-88be-449a-bf00-57da2e23740c",
+  "name": "Sleep room -睡覺覺-",
+  "authorId": "usr_3c5b20e5-ee00-4b77-8943-e0ef213d689a",
+  "authorName": "Lumina_",
+  "capacity": 12,
+  "imageUrl": "https://api.vrchat.cloud/api/1/file/file_aca45894-3aae-4fbd-94eb-3dccd124fdaf/4/file",
+  "thumbnailImageUrl": "https://api.vrchat.cloud/api/1/image/file_aca45894-3aae-4fbd-94eb-3dccd124fdaf/4/256",
+  "releaseStatus": "public",
+  "organization": "vrchat",
+  "tags": [
+    "author_tag_sleep",
+    "system_approved",
+    "system_updated_recently"
+  ],
+  "favorites": 34,
+  "created_at": "2019-09-30T09:26:22.652Z",
+  "updated_at": "2020-01-18T16:16:55.207Z",
+  "publicationDate": "2019-10-01T08:49:01.932Z",
+  "labsPublicationDate": "2019-09-30T14:44:10.625Z",
+  "visits": 3376,
+  "unityPackages": [
+    {
+      "platform": "standalonewindows",
+      "unityVersion": "2017.4.28f1"
+    }
+  ],
+  "popularity": 5,
+  "heat": 4,
+  "occupants": 1,
+  "favoriteId": ""
+}

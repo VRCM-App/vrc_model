@@ -1,0 +1,26 @@
+{
+  "id": "",
+  "username": "",
+  "displayName": "",
+  "bio": "",
+  "bioLinks": [],
+  "currentAvatarImageUrl": "",
+  "currentAvatarThumbnailImageUrl": "",
+  "status": "join me",
+  "statusDescription": "",
+  "state": "online",
+  "tags": [
+    "system_trust_basic",
+    "system_world_access",
+    "system_avatar_access"
+  ],
+  "developerType": "none",
+  "last_login": "2020-01-26T20:03:54.213Z",
+  "last_platform": "",
+  "allowAvatarCopying": true,
+  "isFriend": true,
+  "friendKey": "",
+  "location": "",
+  "worldId": "",
+  "instanceId": ""
+}
