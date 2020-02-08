@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 
-import 'models/notifications.dart';
-import 'vrc_model.dart';
+import 'package:vrc_model/models/notifications.dart';
+import 'package:vrc_model/vrc_model.dart';
 
 mixin Notification on ModelBase {
   // 同意好友请求

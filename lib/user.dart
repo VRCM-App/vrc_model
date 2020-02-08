@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 
-import 'models/friends.dart';
-import 'models/index.dart';
-import 'vrc_model.dart';
+import 'package:vrc_model/models/friends.dart';
+import 'package:vrc_model/models/index.dart';
+import 'package:vrc_model/vrc_model.dart';
 
 mixin User on ModelBase {
   // 好友列表

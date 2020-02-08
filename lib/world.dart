@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 
-import 'models/index.dart';
-import 'vrc_model.dart';
+import 'package:vrc_model/models/index.dart';
+import 'package:vrc_model/vrc_model.dart';
 
 mixin World on ModelBase {
   Future<WorldInfo> getWorldByID(String id) async {

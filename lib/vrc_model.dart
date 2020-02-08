@@ -7,10 +7,10 @@ import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_cookie_manager/dio_cookie_manager.dart';
 
-import 'auth.dart';
-import 'notification.dart';
-import 'user.dart';
-import 'world.dart';
+import 'package:vrc_model/auth.dart';
+import 'package:vrc_model/notification.dart';
+import 'package:vrc_model/user.dart';
+import 'package:vrc_model/world.dart';
 
 class ModelBase {
   ModelBase({this.appDocPath, this.httpProxy}) {
