@@ -7,9 +7,8 @@ class NotificationList {
 
   factory NotificationList.fromJson(List<dynamic> json) {
     List<Notification> l = <Notification>[];
-    for (var i = 0; i < json.length; i++) {
-      Notification info = Notification.fromJson(json[i]);
-      l.add(info);
+    for (var item in json) {
+      l.add(Notification.fromJson(item));
     }
     return NotificationList()..list = l;
   }

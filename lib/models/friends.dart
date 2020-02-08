@@ -7,9 +7,8 @@ class FriendList {
 
   factory FriendList.fromJson(List<dynamic> json) {
     List<UserInfo> l = <UserInfo>[];
-    for (var i = 0; i < json.length; i++) {
-      UserInfo info = UserInfo.fromJson(json[i]);
-      l.add(info);
+    for (var item in json) {
+      l.add(UserInfo.fromJson(item));
     }
     return FriendList()..list = l;
   }
