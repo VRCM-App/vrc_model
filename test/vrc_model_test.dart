@@ -13,6 +13,11 @@ void main() {
     });
     test('Auth', () async {
       var authInfo = await vrc.login(vrcUser, vrcPwd);
+      if (authInfo.requiresTwoFactorAuth.isNotEmpty) {
+        if (await vrc.auth2FA("000000")) {
+          authInfo = await vrc.userInfo();
+        }
+      }
       expect(authInfo.displayName, "Lumina_");
     });
     test('getUserInfo', () async {

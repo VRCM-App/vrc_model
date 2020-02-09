@@ -48,7 +48,8 @@ AuthInfo _$AuthInfoFromJson(Map<String, dynamic> json) {
     ..friendKey = json['friendKey'] as String
     ..onlineFriends = json['onlineFriends'] as List
     ..activeFriends = json['activeFriends'] as List
-    ..offlineFriends = json['offlineFriends'] as List;
+    ..offlineFriends = json['offlineFriends'] as List
+    ..requiresTwoFactorAuth = json['requiresTwoFactorAuth'] as List;
 }
 
 Map<String, dynamic> _$AuthInfoToJson(AuthInfo instance) => <String, dynamic>{
@@ -91,5 +92,6 @@ Map<String, dynamic> _$AuthInfoToJson(AuthInfo instance) => <String, dynamic>{
       'friendKey': instance.friendKey,
       'onlineFriends': instance.onlineFriends,
       'activeFriends': instance.activeFriends,
-      'offlineFriends': instance.offlineFriends
+      'offlineFriends': instance.offlineFriends,
+      'requiresTwoFactorAuth': instance.requiresTwoFactorAuth
     };

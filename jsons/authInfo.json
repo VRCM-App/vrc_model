@@ -44,5 +44,6 @@
   "friendKey": "",
   "onlineFriends": ["", ""],
   "activeFriends": ["", ""],
-  "offlineFriends": ["", ""]
+  "offlineFriends": ["", ""],
+  "requiresTwoFactorAuth": ["totp", "otp"]
 }

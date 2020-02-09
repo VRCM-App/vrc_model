@@ -46,6 +46,7 @@ class AuthInfo {
     List onlineFriends;
     List activeFriends;
     List offlineFriends;
+    List requiresTwoFactorAuth;
     
     factory AuthInfo.fromJson(Map<String,dynamic> json) => _$AuthInfoFromJson(json);
     Map<String, dynamic> toJson() => _$AuthInfoToJson(this);

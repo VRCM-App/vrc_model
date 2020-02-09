@@ -25,6 +25,20 @@ mixin Auth on ModelBase {
     );
   }
 
+  // 2FA验证
+  Future<bool> auth2FA(String code) async {
+    Response resp =
+        await dio.post("auth/twofactorauth/totp/verify", data: {"code": code});
+    return resp?.data["verified"];
+  }
+
+  Future<AuthInfo> userInfo() async {
+    Response resp = await dio.get(
+      "auth/user",
+    );
+    return AuthInfo.fromJson(resp?.data);
+  }
+
   // 获取token
   Future<String> auth() async {
     Response resp = await dio.get(
