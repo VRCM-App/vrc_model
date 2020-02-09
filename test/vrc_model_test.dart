@@ -13,7 +13,7 @@ void main() {
     });
     test('Auth', () async {
       var authInfo = await vrc.login(vrcUser, vrcPwd);
-      if (authInfo.requiresTwoFactorAuth.isNotEmpty) {
+      if (authInfo.requiresTwoFactorAuth != null) {
         if (await vrc.auth2FA("000000")) {
           authInfo = await vrc.userInfo();
         }
